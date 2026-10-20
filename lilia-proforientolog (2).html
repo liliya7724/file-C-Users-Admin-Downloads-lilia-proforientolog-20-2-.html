@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Лилия Тазиева — профориентолог</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f6;--surface:#fff;--soft:#f4ecf3;--ink:#3a3040;--muted:#7a6f80;--rose:#e8b9c6;--lav:#c9b8e6;--accent:#a4609a;--line:#eadfe8;--shadow:0 10px 30px rgba(164,96,154,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#201a24;--surface:#2b2330;--soft:#2f2635;--ink:#f3eaf2;--muted:#b9acbf;--rose:#7d4a5c;--lav:#5b4a80;--accent:#e1a6d6;--line:#403448;--shadow:0 10px 30px rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--bg:#201a24;--surface:#2b2330;--soft:#2f2635;--ink:#f3eaf2;--muted:#b9acbf;--rose:#7d4a5c;--lav:#5b4a80;--accent:#e1a6d6;--line:#403448;--shadow:0 10px 30px rgba(0,0,0,.3)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Manrope,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:16px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600}
+.links{display:flex;gap:20px;font-size:14px;color:var(--muted);overflow-x:auto}
+.links a{white-space:nowrap}.links a:hover{color:var(--accent)}
+section{padding:72px 0}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:14px}
+.lead{color:var(--muted);max-width:640px;margin:0 0 36px}
+.hero{padding:80px 0 64px;background:radial-gradient(600px 300px at 85% 10%,var(--lav),transparent 70%),radial-gradient(500px 300px at 5% 90%,var(--rose),transparent 70%)}
+.hero h1{font-size:clamp(40px,8vw,72px);margin-bottom:10px}
+.hero .role{font-size:18px;color:var(--accent);font-weight:500;margin-bottom:18px}
+.hero p{max-width:560px;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn.p{background:var(--accent);color:#fff}
+.btn.s{background:var(--surface);border:1px solid var(--line)}
+.quote{background:var(--soft);text-align:center;padding:64px 0}
+.quote blockquote{margin:0 auto;max-width:760px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(22px,3.6vw,32px);line-height:1.4}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--soft);color:var(--accent);margin-bottom:14px}
+.num{font-family:"Cormorant Garamond",serif;font-size:38px;color:var(--accent);line-height:1;margin-bottom:10px}
+.tasks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.tasks li{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 20px;display:flex;gap:14px;align-items:center}
+.tasks li::before{content:"✦";color:var(--accent)}
+.alt{background:var(--soft)}
+.rev{columns:2 300px;column-gap:18px}
+.rev figure{break-inside:avoid;margin:0 0 18px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
+.rev blockquote{margin:0 0 12px;font-size:15px}
+.rev figcaption{font-size:13px;color:var(--accent);font-weight:600}
+.contact{text-align:center}
+.contact .card{max-width:620px;margin:0 auto;padding:40px 26px}
+.phone{font-family:"Cormorant Garamond",serif;font-size:34px;margin:10px 0 22px;display:block}
+.contact .btns{justify-content:center}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 0 40px}
+@media(max-width:640px){.links{display:none}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Лилия Тазиева</a>
+<div class="links"><a href="#method">Метод</a><a href="#who">Для кого</a><a href="#steps">Как проходит</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<h1>Тазиева Лилия Ринатовна</h1>
+<div class="role">Профориентолог</div>
+<p>Помогаю увидеть свои сильные стороны, понять мотивацию и выбрать путь, который действительно ваш — в профессии и в жизни.</p>
+<div class="btns"><a class="btn p" href="https://wa.me/79625503878">Написать в WhatsApp</a><a class="btn s" href="https://t.me/tazievaliliya">Написать в Telegram</a></div>
+</div></header>
+
+<div class="quote"><div class="wrap"><blockquote>«Огромный подвиг – усовершенствовать собственную душу. Но куда больший подвиг – увидеть чужую гениальность и помочь ей раскрыться. Именно это и делает людей настоящими героями.»</blockquote></div></div>
+
+<section id="method"><div class="wrap">
+<div class="eyebrow">Метод</div>
+<h2>Диагностика SOFIA AI</h2>
+<p class="lead">Полный чек-ап потенциала личности: не просто список профессий и не просто личностный тест, а целостная картина — характер, ценности, мотивация, способности, эмоциональный интеллект и поведенческие паттерны.</p>
+<ul class="tasks">
+<li>Понять свои сильные стороны</li><li>Выявить потенциал</li><li>Понять свою мотивацию</li><li>Определить карьерные направления</li><li>Получить основу для выбора дальнейшего пути</li>
+</ul></div></section>
+
+<section class="alt" id="who"><div class="wrap">
+<div class="eyebrow">Для кого</div>
+<h2>Два формата диагностики</h2>
+<p class="lead">Программа подбирается по возрасту — для подростков и для взрослых.</p>
+<div class="grid g2">
+<div class="card"><span class="tag">до 15 лет</span><h3>SOFIA Junior</h3><p>Для школьников: помогает понять свои интересы и способности и спокойно подойти к выбору дальнейшего пути.</p></div>
+<div class="card"><span class="tag">15+ лет</span><h3>SOFIA Pro</h3><p>Для старшеклассников, студентов и взрослых: выбор профессии, смена сферы, поиск себя и своего движения к целям.</p></div>
+</div></div></section>
+
+<section id="steps"><div class="wrap">
+<div class="eyebrow">Процесс</div>
+<h2>Как проходит диагностика</h2>
+<p class="lead">Четыре понятных этапа — от знакомства до личного плана действий.</p>
+<div class="grid g3">
+<div class="card"><div class="num">01</div><h3>Установочная сессия</h3><p>Знакомимся, уточняем запрос и ожидания.</p></div>
+<div class="card"><div class="num">02</div><h3>Интервью и тестирование</h3><p>Выявляем интересы, способности и мотивацию.</p></div>
+<div class="card"><div class="num">03</div><h3>Персональный отчёт</h3><p>Подробный разбор вашей личности и возможностей.</p></div>
+<div class="card"><div class="num">04</div><h3>Сессия-интерпретация</h3><p>Расшифровка результатов и пошаговая инструкция дальнейших действий.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<div class="eyebrow">Почему это работает</div>
+<h2>Глубина и точность</h2>
+<p class="lead">Результаты проходят перекрёстную проверку данных и комплексный анализ личности.</p>
+<div class="grid g3">
+<div class="card"><h3>Научная основа</h3></div><div class="card"><h3>AI-синтез данных</h3></div><div class="card"><h3>Полнота анализа</h3></div><div class="card"><h3>Глубина анализа</h3></div><div class="card"><h3>Персонализация</h3></div>
+</div>
+<h3 style="margin:44px 0 18px;font-size:30px">Поддержка после диагностики</h3>
+<div class="grid g3">
+<div class="card"><p>Доступ к результатам</p></div><div class="card"><p>Дополнительные вопросы</p></div><div class="card"><p>Поддержка после диагностики</p></div>
+</div></div></section>
+
+<section id="reviews"><div class="wrap">
+<div class="eyebrow">Отзывы</div>
+<h2>Что говорят клиенты</h2>
+<p class="lead">Живые отзывы людей, которые прошли разбор.</p>
+<div class="rev">
+<figure><blockquote>«Прошла интерпретацию у Лилии. Человек с невероятной энергией и глубиной. Лилия подсветила много моментов, мы обсудили не только мои запросы, но и масштабные цели и путь, хотя запроса изначально не было. Лилия выложилась на 1000%, погрузившись в мою распаковку, и, сопоставив с нумерологией, получилось двойное попадание. Я услышала по-новому про мои точки роста и как я могу легко преобразовать их в точки силы. Очень легко и душевно прошла интерпретация, потому что она своей энергетикой располагает к себе, проявляет заботу и человечность, что для меня очень важно. Рекомендую Лилию как специалиста-профориентолога. Я благодарна судьбе за встречу с тобой!!!»</blockquote><figcaption>Татьяна, декоратор</figcaption></figure>
+<figure><blockquote>«Лилия, благодарю тебя за разбор-интерпретацию. Это оказался не просто анализ, а настоящий путь к более глубокому пониманию себя. Многие вещи заиграли для меня новыми красками. Ты подсветила те моменты, на которые я раньше даже не смотрела, а знакомые уже, казалось мне, темы раскрыла с другой стороны. Это похоже на слово, у которого есть одно привычное определение, но на самом деле существует множество его смыслов. Благодаря тебе я увидела новые формы понимания себя и тем самым расширила свою картину восприятия. Интересно, что через это меняется не только взгляд на себя, но и на мир в целом. У меня появилось более ясное понимание себя и своего движения к целям. Также хочу сказать про твою экспертность в цифровой психологии, она помогла дособрать пазл моего состояния и самопонимания. Ты создаёшь очень спокойное и безопасное пространство, в котором легко открываться. Ты внимательный слушатель и тонко чувствующий человек. Умеешь соединять разные направления и превращать их в целостный и действительно работающий инструмент помощи людям. Ещё раз благодарю тебя.»</blockquote><figcaption>Клиентка</figcaption></figure>
+<figure><blockquote>«Лиля, спасибо за сессию! Было очень интересно послушать и узнать свою личность с разных сторон и с таким подробным разбором о моих возможностях в развитии трудовой деятельности. И главное, что всё совпало и ещё и по цифрам подтвердилось. У меня прям мурашки были в некоторых моментах. Информации много, буду обязательно сама ещё перечитывать и изучать, также спасибо за дополнительный файл с пошаговой инструкцией, очень удобно, как навигатор по дальнейшим шагам и что главное для меня, с чего вообще начать!))»</blockquote><figcaption>Ирина</figcaption></figure>
+<figure><blockquote>«Во-первых, сразу хочу пожелать тебе успехов, Лилия, потому что чувствуется, что это прям твоё. Ты очень грамотно ведёшь коммуникацию и знаешь, что где сказать, как сказать так, чтобы было понятно, не обидно и доходило до глубины. Интерпретацию сама я так не смогла бы сделать — это точно. В принципе, диалог очень легко строился, где-то даже со смехом, а где-то со всей серьёзностью. Такие вещи раскрываются, о которых ты где-то в глубине души догадываешься, но во всей этой жизненной суматохе упускаешь, а потом думаешь: «почему всё не так, почему всё не клеится». Мне кажется, это поворотный день в одной из моих линий жизни, потому что много света пролилось туда, где я никак не могла разобраться. Спасибо тебе большое, я тебе желаю искренне большого успеха и помочь как можно большему количеству людей, которые, так же как я, могут оказаться в ситуации, где не знаешь, куда идти.»</blockquote><figcaption>Клиентка</figcaption></figure>
+<figure><blockquote>«Для меня было особенно ценно, что вы ещё раз подсветили мой проект и помогли мне посмотреть на него со стороны. Иногда действительно важно услышать от другого специалиста, насколько интересную и значимую идею мы создаём. Спасибо вам за искренность, поддержку и тёплое общение. Очень рада нашему знакомству.»</blockquote><figcaption>Клиентка</figcaption></figure>
+<figure><blockquote>«Огромное спасибо Лилии Ринатовне за помощь в выборе будущей профессии! Раньше я сомневалась и не знала, куда поступать, но после профориентации у меня появились ясные цели и уверенность в своих силах. Мне понравилось, что всё объясняли просто, внимательно и без давления. Спасибо за доброту и профессионализм!»</blockquote><figcaption>Алина, 11 класс</figcaption></figure>
+<figure><blockquote>«Лилия Ринатовна, спасибо большое за профориентацию! Мне было очень интересно узнать о своих сильных сторонах, увлечениях и профессиях, которые мне могут подойти. После встречи я стал спокойнее относиться к выбору будущего и понял, какие предметы мне важно подтянуть. Спасибо за поддержку, терпение и понятные советы!»</blockquote><figcaption>Тимур, 9 класс</figcaption></figure>
+<figure><blockquote>«Выражаем искреннюю благодарность Лилии Ринатовне за проведённую профориентацию. Сын стал более уверенным, у него появился интерес к выбору будущей профессии и понятное представление о своих сильных сторонах. Особенно ценно, что специалист сумел найти подход к подростку и дать конкретные рекомендации. Спасибо за профессионализм, чуткость и поддержку!»</blockquote><figcaption>Родители школьника</figcaption></figure>
+<figure><blockquote>«Лилия Ринатовна, благодарю за интересную и полезную профориентацию! Вы помогли мне лучше понять себя, свои таланты и то, что мне действительно нравится. Теперь я знаю, в каком направлении хочу развиваться и чему уделять больше внимания в учёбе. Спасибо, что поверили в меня и помогли сделать первый шаг к будущей профессии!»</blockquote><figcaption>Анна, 9 класс</figcaption></figure>
+<figure><blockquote>«Огромное спасибо Лилии Ринатовне за помощь нашей дочери в определении профессионального пути. После занятий дочь стала спокойнее говорить о будущем, у неё появилась мотивация учиться и ясное понимание, какие направления ей интересны. Нам как родителям очень важно, что работа была проведена бережно, внимательно и с уважением к ребёнку. Благодарим за заботу и результат!»</blockquote><figcaption>Родители школьницы</figcaption></figure>
+</div></div></section>
+
+<section class="alt contact" id="contact"><div class="wrap">
+<div class="eyebrow">Контакты</div>
+<h2>Хватит тратить жизнь на нелюбимую работу и на страх выбрать неправильную профессию:</h2>
+<div class="card" style="margin-top:28px">
+<p>Тазиева Лилия Ринатовна · профориентолог</p>
+<a class="phone" href="tel:+79625503878">+7 962 550-38-78</a>
+<div class="btns"><a class="btn p" href="https://wa.me/79625503878">WhatsApp</a><a class="btn s" href="https://t.me/tazievaliliya">Telegram</a></div>
+</div></div></section>
+
+<footer>© Лилия Тазиева · профориентолог</footer>
+</body>
+</html>
